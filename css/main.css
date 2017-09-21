@@ -396,6 +396,15 @@ header .header-content-inner a {
     margin: 50px auto 0;
 }
 
+.card-img-top-container {
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.card-img-top-container img.card-img-top {
+    width: 100%;
+}
+
 .btn-down {
     color: #cccccc;
     border: 1px solid #cccccc;

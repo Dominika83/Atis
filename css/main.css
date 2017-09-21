@@ -414,9 +414,9 @@ header .header-content-inner a {
 .carousel-caption h3 {
     font-weight: bold;
     color: #fff;
-    font-size: 10vmin;
+    font-size: 49px;
     text-align: center;
-    line-height: 13vmin;
+    line-height: 62px;
 }
 
 .carousel-caption h3 span {
@@ -427,8 +427,8 @@ header .header-content-inner a {
 .carousel-caption blockquote {
     display: block;
 
-    font-size: 3vmin;
-    line-height: 5vmin;
+    font-size: 14px;
+    line-height: 24px;
     text-align: center;
     color: #fff;
     border: none;
@@ -445,7 +445,7 @@ header .header-content-inner a {
 }
 
 .carousel-item p {
-    font-size: 2.5vmin;
+    font-size: 12px;
     text-align: center;
     color: #fff;
 }
@@ -492,6 +492,6 @@ footer .greece {
 footer p {
     font-family: "Roboto-Regular", Arial, sans-serif;
     color: #bdbdbd;
-    font-size: 3vmin;
+    font-size: 14px;
     text-align: center;
 }

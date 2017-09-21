@@ -67,13 +67,11 @@ a:hover, a:focus, a:active {
 
 .navbar-nav li a:hover {
     color: #017dfb;
-    
 }
 
 .navbar-nav li .page-scroll-last {
     box-shadow: 0 0 65px rgba(1, 125, 251, 0.25);
 }
-
 
 /* HEADER */
 header {
@@ -216,7 +214,7 @@ header .header-content-inner a {
 
 /* PLACES */
 #places {
-        padding: 80px 0 30px 0
+    padding: 80px 0 30px 0
 }
 
 .places__title {
@@ -241,7 +239,7 @@ header .header-content-inner a {
 }
 
 .place--big .place__hover-block {
-        padding-top: 140px;
+    padding-top: 140px;
 }
 
 .place__title {
@@ -265,7 +263,7 @@ header .header-content-inner a {
 }
 
 .place:hover .place__title {
-   color: transparent;
+    color: transparent;
 }
 
 .place:hover .place__hover-block {
@@ -273,29 +271,29 @@ header .header-content-inner a {
 }
 
 .place__hover-block h2 {
-  margin-bottom: 20px;
-  color: #fff;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .place__inner-text {
-  height: 32px;
-  background: transparent;
-  border: 1px solid #fff;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-  -moz-transition: ease-in-out 0.3s;
-  -o-transition: ease-in-out 0.3s;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-  color: #fff;
+    height: 32px;
+    background: transparent;
+    border: 1px solid #fff;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -moz-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    color: #fff;
 }
 
 .place__inner-text:hover {
-  -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  color: #fff;
+    -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    color: #fff;
 }
 
 /* HOTELS */
@@ -384,7 +382,7 @@ header .header-content-inner a {
 
 .hotel-button p {
     margin: 10px 0 10px 0;
-} 
+}
 
 .card {
     margin-bottom: 30px;
@@ -473,7 +471,6 @@ header .header-content-inner a {
     width: 5px;
     height: 5px;
 }
-
 
 cite a {
     color: #fff;

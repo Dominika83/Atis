@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/min-main.css">
+  
+</head>
+
+<body>
+<!-- NAVIGATION -->
+<section id="#banner">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <div class="navbar-logo">
+                    <a class="navbar-brand page-scroll" href="#index.html"><img src="images/Atis.png"></a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Flights</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#offer">Hotels</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#blog">Explore</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Restaurants</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Things to do</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">About Greece</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll page-scroll-last" href="#contact">Become a host</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <img src="images/Greece.png">
+                <h2>Welcome to heaven</h2>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Check offer</a>
+            </div>
+        </div>
+    </header>
+
+</section>
+
+<!--FORM-->
+<section id="form">
+    <div class="container">
+        <form class="form form-inline">
+            <div class="form-group">
+                <label for="city" class="city-lbl"><p>City</p></label>
+                <input id="city" name="city" type="text">
+            </div>
+            <div class="form-group">
+                <label for="checkin" class="check-lbl"><p>Check In</p></label>
+                <input id="checkin" name="checkIn" type="date">
+            </div>
+
+            <div class="form-group">
+                <label for="checkout" class="check-lbl"><p>Check Out</p></label>
+                <input id="checkout" name="checkOut" type="date">
+            </div>
+
+            <div class="form-group">
+                <label for="rooms" class="rooms-lbl"><p>Rooms</p></label>
+                <input id="rooms" name="rooms" min="1" max="10" type="number">
+            </div>
+
+            <div class="form-group">
+                <label for="adults" class="adults-lbl"><p>Adults</p></label>
+                <input id="adults" name="adults" min="1" max="10" type="number">
+            </div>
+
+            <div class="form-group">
+                <label for="children" class="children-lbl"><p>Children</p></label>
+                <input id="children" name="Children" min="1" max="10" type="number">
+            </div>
+
+            <div class="form-group">
+                <label for="stars" class="stars-lbl"><p>Stars</p></label>
+                <input id="stars" name="stars" min="1" max="10" type="number">
+            </div>
+
+            <button type="submit" class="btn btn-default btn-search"><img src="images/search.png"></button>
+        </form>
+    </div>
+</section>
+
+<!--PLACES-->
+<section id="places">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="places__title">Most popular places</h3>
+            </div>
+        </div>
+
+        <div class="place-display">
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="place" style="background-image: url(images/Photo3.png)">
+
+                        <div class="place__hover-block">
+                            <h2 class="place__title-layer">Thessaloniki</h2>
+                            <div class="place__inner">
+                                <a href="" class="btn btn-outline place__inner-text">11 Flights</a>
+                                <a href="" class="btn btn-outline place__inner-text">48 Restaurants</a>
+                                <a href="" class="btn btn-outline place__inner-text">32 Hotels</a>
+                            </div>
+                        </div>
+                        <h3 class="place__title">Thessaloniki</h3>
+
+                    </div>
+
+                    <div class="place" style="background-image: url(images/Photo4.png)">
+
+                        <div class="place__hover-block">
+                            <h2 class="place__title-layer">Halkidiki</h2>
+                            <div class="place__inner">
+                                <a href="" class="btn btn-outline place__inner-text">11 Flights</a>
+                                <a href="" class="btn btn-outline place__inner-text">48 Restaurants</a>
+                                <a href="" class="btn btn-outline place__inner-text">32 Hotels</a>
+                            </div>
+                        </div>
+                        <h3 class="place__title">Halkidiki</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="place place--big" style="background-image: url(images/crete.jpg)">
+
+                        <div class="place__hover-block">
+                            <h2 class="place__title-layer">Crete</h2>
+                            <div class="place__inner">
+                                <a href="" class="btn btn-outline place__inner-text">11 Flights</a>
+                                <a href="" class="btn btn-outline place__inner-text">48 Restaurants</a>
+                                <a href="" class="btn btn-outline place__inner-text">32 Hotels</a>
+                            </div>
+                        </div>
+                        <h3 class="place__title">Crete</h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="place" style="background-image: url(images/Photo2.png)">
+                        <div class="place__hover-block">
+                            <h2 class="place__title-layer">Athens</h2>
+                            <div class="place__inner">
+                                <a href="" class="btn btn-outline place__inner-text">11 Flights</a>
+                                <a href="" class="btn btn-outline place__inner-text">48 Restaurants</a>
+                                <a href="" class="btn btn-outline place__inner-text">32 Hotels</a>
+                            </div>
+                        </div>
+                        <h3 class="place__title">Athens</h3>
+                    </div>
+
+                    <div class="place" style="background-image: url(images/Photo2.png)">
+                        <div class="place__hover-block">
+                            <h2 class="place__title-layer">Mykynos</h2>
+                            <div class="place__inner">
+                                <a href="" class="btn btn-outline place__inner-text">11 Flights</a>
+                                <a href="" class="btn btn-outline place__inner-text">48 Restaurants</a>
+                                <a href="" class="btn btn-outline place__inner-text">32 Hotels</a>
+                            </div>
+                        </div>
+                        <h3 class="place__title">Mykynos</h3>
+                    </div>
+
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="place" style="background-image: url(images/Meteora.png)">
+                            <div class="place__hover-block">
+                                <h2 class="place__title-layer">Meteora</h2>
+                                <div class="place__inner">
+                                    <a href="" class="btn btn-outline place__inner-text">11 Flights</a>
+                                    <a href="" class="btn btn-outline place__inner-text">48 Restaurants</a>
+                                    <a href="" class="btn btn-outline place__inner-text">32 Hotels</a>
+                                </div>
+                            </div>
+                            <h3 class="place__title">Meteora</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="place" style="background-image: url(images/Photo5.png)">
+                            <div class="place__hover-block">
+                                <h2 class="place__title-layer">Myrtos Beach</h2>
+                                <div class="place__inner">
+                                    <a href="" class="btn btn-outline place__inner-text">11 Flights</a>
+                                    <a href="" class="btn btn-outline place__inner-text">48 Restaurants</a>
+                                    <a href="" class="btn btn-outline place__inner-text">32 Hotels</a>
+                                </div>
+                            </div>
+                            <h3 class="place__title">Myrtos Beach</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+</section>
+
+<!--HOTELS min 992-->
+<section id="hotels">
+    <div class="container hotel">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Most popular hotels</h3>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/263x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">El Greco</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">225$</span>
+                            <span class="days">10 days</span>
+                        </div>
+                    </div>
+                    <button class="main-button hotel-button"><p>View more</p></button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/263x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    <button class="main-button hotel-button"><p>View more</p></button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/263x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Cyprotel Corfu</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">95$</span>
+                            <span class="days">4 days</span>
+                        </div>
+                    </div>
+                    <button class="main-button hotel-button"><p>View more</p></button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/263x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    <button class="main-button hotel-button"><p>View more</p></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/263x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    <button class="main-button hotel-button"><p>View more</p></button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/263x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    <button class="main-button hotel-button"><p>View more</p></button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/263x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    <button class="main-button hotel-button"><p>View more</p></button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/263x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    <button class="main-button hotel-button"><p>View more</p></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="com-md-12 hotel__btn-down">
+                <button type="button" class="button btn-down"><p>View all offerts</p></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--HOTELS max 991-->
+<section id="hotels2">
+    <div class="container hotel">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Most popular hotels</h3>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/750x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">El Greco</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">225$</span>
+                            <span class="days">10 days</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/750x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/750x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Cyprotel Corfu</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">95$</span>
+                            <span class="days">4 days</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/750x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/750x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/750x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/750x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/750x180" alt=""></a>
+                    <div class="flex">
+                        <div class="hotel-name">
+                            <span class="name">Panorama</span>
+                            <img src="images/Star2.png">
+                            <img src="images/Star2.png">
+                        </div>
+                        <div class="hotel-price">
+                            <span class="price">125$</span>
+                            <span class="days">6 days</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="com-md-12 hotel__btn-down">
+                <button type="button" class="button btn-down"><p>View all offerts</p></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--BOTTOM SLIDER min 769 -->
+<section class="slider-section">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/BG.png" alt="Greece">
+                <div class="carousel-caption">
+                    <h3>And then God said let there be a <span>Greece</span></h3>
+                    <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa enim, lobortis
+                        in volutpat porttitor, auctor dictum magna. Sed gravida condimentum leo sed tristique. Ut
+                        cursus sem ut turpis posuere, vel ultrices quam aliquam.
+                    </blockquote>
+                    <p><cite>John Doe, <a href="#">mytravels.com</a></cite></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/BG.png" alt="Greece">
+                <div class="carousel-caption">
+                    <h3>And then God said let there be a <span>Greece</span></h3>
+                    <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa enim, lobortis
+                        in volutpat porttitor, auctor dictum magna. Sed gravida condimentum leo sed tristique. Ut
+                        cursus sem ut turpis posuere, vel ultrices quam aliquam.
+                    </blockquote>
+                    <p><cite>John Doe, <a href="#">mytravels.com</a></cite></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/BG.png" alt="Greece">
+                <div class="carousel-caption">
+                    <h3>And then God said let there be a <span>Greece</span></h3>
+                    <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa enim, lobortis
+                        in volutpat porttitor, auctor dictum magna. Sed gravida condimentum leo sed tristique. Ut
+                        cursus sem ut turpis posuere, vel ultrices quam aliquam.
+                    </blockquote>
+                    <p><cite>John Doe, <a href="#" class="slider-adress">mytravels.com</a></cite></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+
+  <!--FOOTER-->
+    <footer class="">
+        <div class="greece">
+            <a href="#"><img src="images/atis-kopia.png" alt=""></a>
+            <h2>atis</h2>
+        </div>
+        <p>ⓒ Copyright 2016. All rights reserved by symu.co</p>
+    </footer>
+
+
+    <!--SCRIPT-->
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

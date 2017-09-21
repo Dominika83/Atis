@@ -375,8 +375,11 @@ header .header-content-inner a {
     line-height: 23px;
     padding: 0;
     width: 146px;
-    top: 250px;
-    left: 65px;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
 }
 

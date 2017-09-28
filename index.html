@@ -17,9 +17,11 @@
 </head>
 
 <body>
-<!-- NAVIGATION -->
+
 <section id="#banner">
 
+
+    <!-- NAVIGATION min 768 -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -56,6 +58,34 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </nav>
+
+    <!-- NAVIGATION max 767 -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/Atis.png"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../navbar/">Flights</a></li>
+                    <li><a href="../navbar/">Hotels</a></li>
+                    <li><a href="../navbar/">Explore</a></li>
+                    <li><a href="../navbar/">Restaurants</a></li>
+                    <li><a href="../navbar/">Things to do</a></li>
+                    <li><a href="../navbar/">About Greece</a></li>
+                    <li class="active"><a href="./">Become a host <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
         </div>
     </nav>
 
@@ -434,15 +464,10 @@
     </div>
 </section>
 
-<!--BOTTOM SLIDER min 769 -->
+<!--BOTTOM SLIDER min 768 -->
 <section class="slider-section">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
@@ -455,6 +480,12 @@
                         cursus sem ut turpis posuere, vel ultrices quam aliquam.
                     </blockquote>
                     <p><cite>John Doe, <a href="#">mytravels.com</a></cite></p>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
                 </div>
             </div>
 
@@ -466,7 +497,12 @@
                         in volutpat porttitor, auctor dictum magna. Sed gravida condimentum leo sed tristique. Ut
                         cursus sem ut turpis posuere, vel ultrices quam aliquam.
                     </blockquote>
-                    <p><cite>John Doe, <a href="#">mytravels.com</a></cite></p>
+                    <p><cite>John Doe, <a href="#">mytravels.com</a></cite></p><!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
                 </div>
             </div>
 
@@ -478,7 +514,12 @@
                         in volutpat porttitor, auctor dictum magna. Sed gravida condimentum leo sed tristique. Ut
                         cursus sem ut turpis posuere, vel ultrices quam aliquam.
                     </blockquote>
-                    <p><cite>John Doe, <a href="#" class="slider-adress">mytravels.com</a></cite></p>
+                    <p><cite>John Doe, <a href="#" class="slider-adress">mytravels.com</a></cite></p><!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -495,6 +536,18 @@
     </div>
 </section>
 
+<!--BOTTOM SLIDER max 767 -->
+<section class="slider__small">
+    <div class="slider__small-content">
+        <h3>And then God said let there be a <span>Greece</span></h3>
+        <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa enim, lobortis
+            in volutpat porttitor, auctor dictum magna. Sed gravida condimentum leo sed tristique. Ut
+            cursus sem ut turpis posuere, vel ultrices quam aliquam.
+        </blockquote>
+        <p><cite>John Doe, <a href="#" class="slider-adress">mytravels.com</a></cite></p>
+
+    </div>
+</section>
 
 <!--FOOTER-->
 <footer class="">
@@ -504,7 +557,6 @@
     </div>
     <p>ⓒ Copyright 2016. All rights reserved by symu.co</p>
 </footer>
-
 
 <!--SCRIPT-->
 
